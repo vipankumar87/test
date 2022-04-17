@@ -1,0 +1,743 @@
+<?php  require '../functions.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.chandokonline.in/Gallery/PhotoGallery by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Mar 2022 03:42:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>www.chandokonline.in: Photo Gallery</title>
+    <link rel="icon" href="../Content/images/homepage/ecr-logo1.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../eCRMagicIncludes/ecrmagicV2Content/Content/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../eCRMagicIncludes/ecrmagicV2Content/Content/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../Content/css/Inner.css" rel="stylesheet"/>
+<link href="../eCRMagicIncludes/ecrmagicV2Content/Content/css/common.css" rel="stylesheet"/>
+<link href="../Content/css/home_css.css" rel="stylesheet"/>
+
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/jquery-1.10.2.js"></script>
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/jquery-ui.js"></script>
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/bootstrap.min.js"></script>
+<script src="../Content/Scripts/homepage/ie-emulation-modes-warning.js"></script>
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/bootbox.min.js"></script>
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/common.js"></script>
+<script src="../Content/Scripts/homepage/responsive-tabs.js"></script>
+<script src="../Content/Scripts/homepage/ie10-viewport-bug-workaround.js"></script>
+<script src="../Content/Scripts/homepage/offcanvas.js"></script>
+<script src="../Content/Scripts/homepage/owl.carousel.js"></script>
+
+    <script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/bootstrap.js"></script>
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/respond.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+	
+	<link href="../eCRMagicIncludes/ecrmagicV2Content/Content/css/common.css" rel="stylesheet"/>
+	<script src="../Content/Scripts/stellarnav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body class="ecrhomepagecss">
+    <div class="loading loader_Proc" align="center" id='loader_Prcessing'>
+        <img src="../eCRMagicIncludes/ecrmagicV2Content/Content/images/innerpage/Loaders.gif" style="width: 9%;" />
+        <!--<span style='font-weight:bold;'>Processing.... Please Wait!</span>-->
+    </div>
+
+ <div class="panel1hdrnw1">
+        <div class="logo_full">
+				
+				<div class="header_topsection">					
+						<div class="fllftwd100 otherpartlogocont">
+							<div class="acsipmutumadv">
+								<div class="col-sm-3 col-lg-3 logo_section">
+									<div class="logo">
+										<a href="../Home/Landingpage.html"><img src="../Content/images/homepage/ecr-logo.png" alt="" class="img-responsive"></a>
+									</div>
+								</div>							
+
+							
+                            <div class="col-sm-9 col-md-9 pad_0 login_right">	
+								<div class="acsipmutumadv_inlinedv">
+									<p class="txt"><a href="../Home/Landingpage.html">Home</a></p>
+								</div>
+								<div class="acsipmutumadv_inlinedv">
+									<p class="txt"><a href="../Login/Login.html">Start an SIP instantly</a></p>
+								</div>
+								<div class="acsipmutumadv_inlinedv kmf">
+									<p class="txt"><a href="../Information/Why_mutualfund.html">Know Mutual Fund</a></p>
+								</div>
+								<div class="acsipmutumadv_inlinedv tax_filling_form">
+									
+								<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button> -->
+								
+								<div class="modal fade product_view" id="product_view">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+											  <!--   <h3 class="modal-title">HTML5 is a markup language</h3> -->
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-md-12">
+<div class="col-sm-6 col-lg-6 contactusflexorder1">
+    <div class="headofccontdiv submiturquerydv">
+        <div class="headofcheadcont">
+            <h4 class="h4">Submit your Query</h4>
+        </div>
+        <div class="headofcbodycont">
+            <input type="text" id="txtContName" name="txtContName" placeholder="-Your Name-" />
+            <input type="text" id="txtContEmail" name="txtContEmail" placeholder="-Your Email-"  maxlength="40" />
+            <input type="text" id="txtContMobi" name="txtContMobi" onkeypress="return isANumber(event);" placeholder="-Your Mobile No-" maxlength="10"/>
+            <textarea type="text" id="txtContMess" name="txtContMess" placeholder="-Your Message-"></textarea>
+            <a href="#" class="btn btn-info btn-lg btn_mystyle" onclick="fnSubmitForm()">Submit</a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function fnSubmitForm()
+    {
+        var Name = document.getElementById("txtContName").value;
+        var Email = document.getElementById("txtContEmail").value;
+        var Mobile = document.getElementById("txtContMobi").value;
+        var Message = document.getElementById("txtContMess").value;
+
+        if (Name == null || Name == "") {
+            //bootbox.alert("Enter Name.");
+            bootbox.alert("Enter Name.").on('hidden.bs.modal', function () {
+                $("#txtContName").focus();
+            });
+        }
+        else if (Email == null || Email == "") {
+            // bootbox.alert("Enter Email.");
+            bootbox.alert("Enter Email.").on('hidden.bs.modal', function () {
+                $("#txtContEmail").focus();
+            });
+        }
+        else if (!ValidateEmail(Email)) {
+            //bootbox.alert("Please Enter Proper Email Id");
+            bootbox.alert("Enter valid email address.").on('hidden.bs.modal', function () {
+                $("#txtContEmail").focus();
+            });
+        }
+        else if (Mobile == null || Mobile == "") {
+            //bootbox.alert("Enter Mobile.");
+            bootbox.alert("Enter Mobile.").on('hidden.bs.modal', function () {
+                $("#txtContMobi").focus();
+            });
+        }
+        else if (Message == null || Message == "") {
+            // bootbox.alert("Enter Message.");
+            bootbox.alert("Enter Message.").on('hidden.bs.modal', function () {
+                $("#txtContMobi").focus();
+            });
+        }
+             
+        else
+        {
+            var callback = function (data) {
+                if (data != null)
+                {
+                    if (data == "Success")
+                    {
+                        //bootbox.alert(data);
+                        bootbox.alert("Thank you for showing interest. We will get back to you soon.");
+
+                        document.getElementById("txtContName").value = "";
+                        document.getElementById("txtContEmail").value = "";
+                        document.getElementById("txtContMobi").value = "";
+                        document.getElementById("txtContMess").value = "";
+                    }
+                    else {
+                        hideloader();
+                        bootbox.alert("Something Went Wrong, Please Try Again");
+                    }
+                   
+                }
+                else
+                {
+                    hideloader();
+                    bootbox.alert("Something Went Wrong, Please Try Again");
+                }
+            }
+
+
+            AsyncPostDataWithoutLoading("/Partial/ContactUsSubmit", JSON.stringify({ 'Name': Name, 'Email': Email, 'Mobile': Mobile, 'Message': Message }), callback)
+        }
+    }
+
+    function isANumber(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+    }
+</script>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+								
+								<div class="col-sm-12 col-md-12">
+										<div class="acsipmutumadv_inlinedv">
+										<div class="lgog_right">
+											<ul>
+												<!--<li class="Phone-Number"><span><img src="/Content/images/homepage/wealthfox/tele_icon.png" class="img-responsive Phone-Icon-Img">+91 99410 68410</span></li>-->
+												<li><a href="../Login/Login.html" onclick="showloader()">Login</a></li>
+												<li class="smll_none"><a href="../Registration/Signup.html" onclick="showloader()">Register</a></li>                                 
+											</ul>
+										</div>
+										<div class="loginicon4smallscreen">
+											<ul>
+												<li class="Phone-Number"><span><img src="../Content/images/homepage/wealthfox/tele_icon.html" class="img-responsive Phone-Icon-Img">+91 99410 68410</span></li>
+												<li><a href="../Login/Login.html" onclick="showloader()"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+												<li class="smll_none"><a href="../Registration/Signup.html" onclick="showloader()"><i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+											</ul>
+										</div>
+									
+									</div>								
+								</div>
+							</div>
+                       </div>
+					   
+                </div>
+</div>
+
+
+
+				
+                    <div class="col-sm-12 col-lg-12 menu_section">
+                    	<div class="fllftwd100 ful_menu">
+					<div class="container">
+                <div class="row">	
+					 
+                <div class="">
+					<div class="">
+						<div class="">
+							<div id="main-nav" class="stellarnav">
+							
+								<ul class="">									
+									
+									<li><a href="../Home/About.html">Know Us</a>
+										<ul>
+											<li><a href="../Home/About.html" onclick="showloader();">About Us</a></li>
+											<li><a href="PhotoGallery.html" onclick="showloader();">Photo Gallery</a></li>
+											<li><a href="CertificateGallery.html" onclick="showloader();">Certificates</a></li>
+											<li><a href="AwardsGallery.html" onclick="showloader();">Awards</a></li>
+										</ul>
+									</li>
+
+									<li><a href="#">Mutual Funds</a>
+										<ul>
+
+											<li><a href="../Information/Why_mutualfund.html" onclick="showloader();">Why Mutual Funds?</a></li>
+											<li><a href="../MutualFund/FundSnapShotDetails1564.html?FundID=NDk5" onclick="showloader();">Funds at-a-glance</a></li>
+											<li><a href="../Funds/RecommendedFunds.html" onclick="showloader();">Our Favourite Funds</a></li>
+											<li><a href="../Funds/TopPerformingFund.html" onclick="showloader();">Industry Top Performers</a></li>
+											<li><a href="../MutualFund/DividendsDeclared.html" onclick="showloader();">Dividends Declared</a></li>
+											<li><a href="../MutualFund/NFODetail.html" onclick="showloader();">NFOs</a></li>
+											<li><a href="../MutualFund/GainersLosers.html" onclick="showloader();">Gainers / Losers</a></li>
+											<li><a href="../MutualFund/Growthcalc.html" onclick="showloader();">Growth Calculator</a></li>
+											<li><a href="../Calculator/RiskProfile.html" onclick="showloader();">Risk Profile</a>		</li>
+											
+										</ul>
+									</li>
+									<li><a href="#">SIP Investment</a>
+										<ul>
+											<li><a href="../Information/Why_sip.html" onclick="showloader();">Why SIP</a></li>
+											<li><a href="../Login/Logind40c.html?returnUrl=/Buy_Online/StartSIP" onclick="showloader();">Start an SIP</a></li>
+											<li><a href="../Calculator/Sipcalculator.html" onclick="showloader();">SIP Calculator</a></li>
+											<li><a href="../Calculator/RetirementPlanner.html" onclick="showloader();">Retirement Planner</a></li>
+											<li><a href="../Calculator/ChildEducationPlanner.html" onclick="showloader();">Child Education Planner</a></li>
+											<li><a href="../Calculator/GoalPlanner.html" onclick="showloader();">Goal based Planner</a></li>
+											<li><a href="../Calculator/SIPComparison.html" onclick="showloader();">SIP Comparison</a></li>
+											<li><a href="../Calculator/SIPPerformanceChart.html" onclick="showloader();">SIP Performance Chart</a></li>
+											<li><a href="../Calculator/SIPDelayCalculator.html" onclick="showloader();">SIP Delay Calculator</a></li>
+											<li><a href="../Calculator/SWPPerformanceChart.html" onclick="showloader();">SWP Performance Chart</a></li>
+											<!--<li><a href="#" class="new_submenu newsubmenubgc">MF Sales Tools</a>
+										<ul class="reachus_dropdown">
+											<li><a href="/Calculator/SIPComparison" onclick="showloader();">SIP Comparison</a></li>
+											<li><a href="/Calculator/SIPPerformanceChart" onclick="showloader();">SIP Performance Chart</a></li>
+											<li><a href="/Calculator/SIPDelayCalculator" onclick="showloader();">SIP Delay Calculator</a></li>
+											<li><a href="/Calculator/SWPPerformanceChart" onclick="showloader();">SWP Performance Chart</a></li>
+										</ul>
+									</li>-->
+										</ul>
+									</li>
+									<li><a href="#">Life Insurance</a>
+										<ul>
+											<li><a href="../Information/life_insurance.html" onclick="showloader();">Why Life Insurance?</a></li>
+											<li><a href="../Information/LifeInsuranceProducts.html" onclick="showloader();">Life Insurance Products</a></li>
+											<li><a href="../LIC/PremiumCalculator.html" onclick="showloader();">Premium Calculator</a></li>
+											<li><a href="../LIC/HLVCalculator.html" onclick="showloader();">HLV Calculator</a></li>
+										</ul>
+									</li>
+									<li class="no_sub">
+										<a href="../GeneralInsurance/GeneralInsurance.html" onclick="showloader();">General Insurance</a>
+									</li>
+									
+									<li><a href="#">Downloads</a>
+										<ul>
+											<li><a href="../Miscallenous/Forms.html" onclick="showloader();">Forms</a></li>
+											<li><a href="../Miscallenous/KycForm.html" onclick="showloader();">KYC Forms</a></li>
+											<li><a href="../Miscallenous/GeneralForms.html" onclick="showloader();">General Forms</a></li>
+										</ul>
+									</li>
+
+									<li>
+									<a href="#">Information</a>
+										
+										<ul>
+											<li><a href="../Miscallenous/InsuranceNews.html" onclick="showloader();">Industry News</a></li>
+											<li><a href="../Miscallenous/Articles.html" onclick="showloader();">Articles</a></li>
+											<li><a href="../Miscallenous/TaxGuide.html" onclick="showloader();">Income Tax Guide</a></li>
+											<li><a href="../Miscallenous/Income_Tax_Calculator.html" onclick="showloader();">Income Tax Calculator</a></li>
+											<li><a href="../Miscallenous/faqs.html" onclick="showloader();">FAQ</a></li>
+
+									<li><a href="#" class="new_submenu newsubmenubgc">Financial Calculator</a>
+										<ul class="reachus_dropdown">
+											<li><a href="../Calculator/FDCalculator.html" onclick="showloader();">Fix Deposite Calculator</a></li>
+												<li><a href="../Calculator/RDCalculator.html" onclick="showloader();">Recurring Deposite Calculator</a></li>
+												<li><a href="../Calculator/SavingNeedCalculator.html" onclick="showloader();">Saving needed to reach Goals</a></li>
+												<li><a href="../calculator/TimeReachGoalCalculator.html" onclick="showloader();">Time required to reach Goals</a></li>
+												<li><a href="../calculator/PresentValueCalculator.html" onclick="showloader();">Present Value Calculator</a></li>
+												<li><a href="../calculator/EMICalculator.html">EMI Calculator</a></li>
+										</ul>
+									</li>
+
+
+									
+										</ul>
+									</li>
+									<li><a href="#">Reach Us</a>
+										<ul class="reachus_dropdown">
+											<li><a href="../Home/ContactUs.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+					
+                    </div>
+            
+        </div>
+       </div>
+
+    </div>
+
+    
+
+
+<div class="fllftwd100" id="tblPhotoGalleryPartial">
+
+
+
+
+<script src="../eCRMagicIncludes/ecrmagicV2Content/Content/Scripts/photogallery.js"></script>
+
+<header class="photogallery">
+    <div class="container">
+        
+
+
+
+<script>
+
+    var strLocation;
+    var strEncoder;
+
+    function fnShare(id)
+    {
+        debugger;
+        var pageUrl = encodeURIComponent(document.URL);
+        var tweet = encodeURIComponent(jQuery("meta[property='og:description']").attr("content"));
+
+        if (id == '1')
+        {
+            //strLocation = window.location.href;
+            //strEncoder = encodeURIComponent(strLocation);
+
+            newwindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + pageUrl, "Facebook", 'width=1300,height=600,toolbar=0,menubar=0,location=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+
+        }
+        else if (id == '2')
+        {
+            newwindow = window.open('https://twitter.com/intent/tweet?url=' + pageUrl, "Twitter", 'width=1300,height=600,toolbar=0,menubar=0,location=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+        else if (id == '3') {
+
+          //'https://www.linkedin.com/shareArticle?mini=true&url=' + pageUrl
+            //https://www.linkedin.com/shareArticle?mini=true&url=http://dotnetbugbuster.byethost7.com&title=.Net Bug Buster&summary=.Net Bug Buster is my personal blog where i can post ASP.Net, C#, Linq, Kentico, Sql Server, MVC and Azure related articles&source=Nursingcenter
+
+            //https://www.linkedin.com/sharing/share-offsite/?url=' + pageUrl
+
+            newwindow = window.open('https://www.linkedin.com/shareArticle?mini=true&url=' +'https%3a%2f%2fwww.chandokonline.in%2fGallery%2fPhotoGallery' +'&title='+''+'&summary='+''+'&source='+'', "Linkedin", 'width=1300,height=600,toolbar=0,menubar=0,location=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+        
+ 
+    }
+
+
+</script>
+
+
+<div class="socialicon_sec" style="text-align: right; Social">
+  
+
+
+    <a href="#" class=" fa fa-facebook" id="shareFacebook" style="align-content:initial" onclick="fnShare('1')">
+    <span class="spansocial">share</span></a>
+    
+    <a href="#" class=" fa fa-linkedin" id="shareLinkedIn" style="align-content:initial" onclick="fnShare('3')">
+    <span class="spansocial">share</span></a>
+
+    <a href="#" class=" fa fa-twitter" id="shareTwitter"  onclick="fnShare('2')"><span class="spansocial">share
+                  </span></a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "../../platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+</div>
+        <div class="row">
+			<div class="pageheadrbordr">
+            <div class="col-xs-12">
+			
+                <h1 class="pghdr h1">Photo Gallery</h1>
+				
+                <div class="gallery">
+  					<?php getGalleryImages('photo-gallery'); ?>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="linkedicons">
+
+                    <a href="../Home/About.html">
+                        <div class="linked_iconcontindi">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <p class="linkedtagp">About Us</p>
+                        </div>
+                    </a>
+                    <a href="AwardsGallery.html">
+                        <div class="linked_iconcontindi">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <p class="linkedtagp">Awards</p>
+                        </div>
+                    </a>
+                    <a href="CertificateGallery.html">
+                        <div class="linked_iconcontindi">
+                            <span class="glyphicon glyphicon-certificate"></span>
+                            <p class="linkedtagp">Certificates</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+</div>
+
+    <div>
+        <div class="fllftwd100 fotter_all">
+            <div class="container">
+                <div class="row">
+				
+					<div class="fllftwd100 fotter_all_sub">
+						<div class="fotter_inn">
+							<h4>Mutual Funds</h4>
+							<ul>
+								<li><a href="../Information/Why_mutualfund.html" onclick="showloader();">Why Mutual Funds?</a></li>
+								<li><a href="../MutualFund/FundSnapShotDetails1564.html?FundID=NDk5" onclick="showloader();">Funds at-a-glance</a></li>
+								<li><a href="../Funds/RecommendedFunds.html" onclick="showloader();">Our Favourite Funds</a></li>
+								<li><a href="../Funds/TopPerformingFund.html" onclick="showloader();">Industry Top Performers</a></li>
+								<li><a href="../MutualFund/DividendsDeclared.html" onclick="showloader();">Dividends Declared</a></li>
+								<li><a href="../MutualFund/NFODetail.html" onclick="showloader();">NFOs</a></li>
+								<li><a href="../MutualFund/GainersLosers.html" onclick="showloader();">Gainers / Losers</a></li>
+								<li><a href="../MutualFund/Growthcalc.html" onclick="showloader();">Growth Calculator</a></li>
+								<li><a href="../Calculator/RiskProfile.html" onclick="showloader();">Risk Profile</a>		</li>
+							</ul>
+						</div>
+						
+						
+						<div class="fotter_inn">
+							<h4>SIP Investment</h4>
+							<ul>
+								<li><a href="../Information/Why_sip.html" onclick="showloader();">Why SIP</a></li>
+								<li><a href="../Login/Logind40c.html?returnUrl=/Buy_Online/StartSIP" onclick="showloader();">Start an SIP</a></li>
+								<li><a href="../Calculator/Sipcalculator.html" onclick="showloader();">SIP Calculator</a></li>
+								<li><a href="../Calculator/RetirementPlanner.html" onclick="showloader();">Retirement Planner</a></li>
+								<li><a href="../Calculator/ChildEducationPlanner.html" onclick="showloader();">Child Education Planner</a></li>
+								<li><a href="../Calculator/GoalPlanner.html" onclick="showloader();">Goal based Planner</a></li>
+								<!--<li><a href="/Calculator/SIPComparison">SIP Comparison</a></li>
+										<li><a href="/Calculator/SIPPerformanceChart">SIP Performance Chart</a></li>
+										<li><a href="/Calculator/SIPDelayCalculator">SIP Delay Calculator</a></li>
+										<li><a href="/Calculator/SWPPerformanceChart">SWP Performance Chart</a></li>-->
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MF Sales Tools<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="../Calculator/SIPComparison.html">SIP Comparison</a></li>
+										<li><a href="../Calculator/SIPPerformanceChart.html">SIP Performance Chart</a></li>
+										<li><a href="../Calculator/SIPDelayCalculator.html">SIP Delay Calculator</a></li>
+										<li><a href="../Calculator/SWPPerformanceChart.html">SWP Performance Chart</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+			
+			
+						<div class="fotter_inn">
+							<h4>Life Insurance</h4>
+							<ul>
+								<li><a href="../Information/life_insurance.html" onclick="showloader();">Why Life Insurance?</a></li>
+								<li><a href="../Information/LifeInsuranceProducts.html" onclick="showloader();">Life Insurance Products</a></li>
+								<li><a href="../LIC/PremiumCalculator.html" onclick="showloader();">Premium Calculator</a></li>
+								<li><a href="../LIC/HLVCalculator.html" onclick="showloader();">HLV Calculator</a></li>
+							</ul>
+						</div>
+						
+						<div class="fotter_inn">
+							<h4>General Insurance</h4>
+							<ul>
+								<li><a href="../GeneralInsurance/GeneralInsurance.html?ID=1" onclick="showloader();">Health Insurance</a></li>
+								<li><a href="../GeneralInsurance/GeneralInsurance.html?ID=2" onclick="showloader();">Personal Insurance</a></li>
+								<li><a href="../GeneralInsurance/GeneralInsurance.html?ID=3" onclick="showloader();">Travel Insurance</a></li>
+								<li><a href="../GeneralInsurance/GeneralInsurance.html?ID=4" onclick="showloader();">Motor Insurance</a></li>
+							</ul>
+						</div>
+						
+						<div class="fotter_inn">
+							<h4>Downloads</h4>
+							<ul>
+								<li><a href="../Miscallenous/Forms.html" onclick="showloader();">Forms</a></li>
+								<li><a href="../Miscallenous/KycForm.html" onclick="showloader();">KYC Forms</a></li>
+								<li><a href="../Miscallenous/GeneralForms.html" onclick="showloader();">General Forms</a></li>
+							</ul>
+						</div>
+						
+						<div class="fotter_inn">
+							<h4>Information</h4>
+							<ul>
+								<li><a href="../Miscallenous/InsuranceNews.html" onclick="showloader();">Industry News</a></li>
+								<li><a href="../Miscallenous/Articles.html" onclick="showloader();">Articles</a></li>
+								<li><a href="../Miscallenous/TaxGuide.html" onclick="showloader();">Tax Guide</a></li>
+								<li><a href="../Miscallenous/faqs.html" onclick="showloader();">FAQs</a></li>
+								<li><a href="../Miscallenous/Income_Tax_Calculator.html" onclick="showloader();">Income Tax Calculator</a></li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Calculator<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="../Calculator/FDCalculator.html">Fix Deposite Calculator</a></li>
+										<li><a href="../Calculator/RDCalculator.html">Recurring Deposite Calculator</a></li>
+										<li><a href="../Calculator/SavingNeedCalculator.html">Saving needed to reach Goals</a></li>
+										<li><a href="../calculator/TimeReachGoalCalculator.html">Time required to reach Goals</a></li>
+										<li><a href="../calculator/PresentValueCalculator.html">Present Value Calculator</a></li>
+										<li><a href="../calculator/EMICalculator.html">EMI Calculator</a></li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+						
+						
+						
+						<div class="clearfix"></div>
+						<div class="col-lg-4 col-sm-6">
+						<div class="fllftwd100 footer_followus">
+							<h4>Follow Us</h4>
+							<p class="tx">Follow us on our social media channels:</p>
+							<ul>
+							<div class="FU-Icon hvr-bounce-in">
+								<a href="#">
+								<i class="fa fa-facebook-f"></i>
+								</a>
+								</div>
+								<div class="FU-Icon hvr-bounce-in">
+								<a href="#">
+								<i class="fa fa-tumblr"></i>
+								</a>
+								</div>
+								<!--<div class="FU-Icon hvr-bounce-in">
+								<a href="#">
+								<i class="fa fa-pinterest-p"></i>
+								</a>
+								</div>-->
+								<div class="FU-Icon hvr-bounce-in">
+								<a href="#">
+								<i class="fa fa-twitter"></i>
+								</a>
+								</div>
+								
+							</ul>                                    
+						</div>
+						</div>
+						<div class="col-lg-4 col-sm-4"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+        <div class="fllftwd100 fotter_dwon">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="fotter_dwon_inn">
+                            <p class="tx">All Rights Reserved © 2021 www.chandokonline.in</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="fotter_dwon_inn_left">
+                            <ul>
+                                <li><a href="#" data-toggle="modal" data-target="#onboarding_disclaimer">Disclaimer</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#onboarding_policy">Privacy Policy</a></li>
+                                <li><a href="../Home/ContactUs.html">Contact Us</a></li>
+                                <li><a href="../Home/sitemap.html">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="back-to-top" href="#" class="btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left">
+            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+        </a>
+    </div>
+ 
+
+    <div class="modal boxsize fade " id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+	
+	<div class="modal fade" id="onboarding_disclaimer" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Disclaimer</h4>
+				</div>
+				<div class="modal-body">
+					<p class="tx">You expressly agree the use of the service is at your sole risk. The service is provided on an "as is" and "as available" basis. www.chandokonline.in expressly disclams all warranties of any kind, whether express or implied, including, but not limited to the implied warranties of merchantability, fitness for a particular purpose and non-infringement. www.chandokonline.in makes no warranty the services will meet your requirements, or the services will be uninterrupted, timely, secure, or error free. Nor does www.chandokonline.in make any warranty as to the results that may be obtained through the service or that defects in the software will be corrected. You understand and agree any material and/ or data downloaded or otherwise obtained through the use of the service is done at your own discretion and risk and you will be solely responsible for any damage to your computer systems or loss of data that results from the download of such material and/ or data. www.chandokonline.in makes no warranty regarding any goods or services purchased or obtained through the service or any transactions entered into through the service. No advice or information, whether oral or written, which you obtain from www.chandokonline.in or through the service shall create any warranty not expressly made herein.</p>					
+					
+					<p class="tx">You acknowledge that www.chandokonline.in site may contain links to other web sites operated by third parties ("linked sites"). You acknowledge that, when you click on a link to visit a linked site, a frame may appear that contains the www.chandokonline.in logo, advertisements and/ or other content selected by www.chandokonline.in. You acknowledge that www.chandokonline.in and its sponsors neither endorse nor are affiliated with the linked site or any link contained in a link site, or any changes or updates to such sites. You also acknowledge that www.chandokonline.in is providing these links to you only as a convenience.</p>
+					
+					<p class="tx">www.chandokonline.in does not endorse in anyway any advertisers/ contents of advertisers on its webpages. Please therefore verify the veracity of all information on your own before undertaking reliance and actioning thereupon. www.chandokonline.in shall not be responsible nor liable for any consequential damages arising on account of your relying on the contents of the advertisement.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="onboarding_policy" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title">Privacy Policy</h4>
+				</div>
+				<div class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+    <script type="text/javascript">
+        $(document).ajaxError(function (e, xhr) {
+            hideloader();
+            if (xhr.status == 401) {
+                bootbox.alert("Your session has expired. Please Login again.").on('hidden.bs.modal', function () {
+                    showloader();
+                    window.location = "../Login/Login.html";
+                });
+                window.stop();
+            }
+            else if (xhr.status == 403) {
+                bootbox.alert("You have no enough permissions to request this resource. Please Login again.").on('hidden.bs.modal', function () {
+                    showloader();
+                    window.location = "../Login/Login.html";
+                });
+                window.stop();
+            }
+        });
+
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            $('#back-to-top').tooltip('show');
+
+            $("button.btn_username").click(function () {
+                $(this).closest(".dropdown").addClass("open");
+            });
+
+        });
+        function showloader() {
+            $("#loader_Prcessing").show();
+        }
+
+        function hideloader() {
+            $("#loader_Prcessing").hide();
+        }
+		
+		
+		$("#onboarding_policy").on("show.bs.modal", function(e) {
+
+        $.get('/information/policy', function( data ) {
+          $("#onboarding_policy .modal-body").html(data);
+        });
+
+      });
+    </script>
+
+	<script>
+    $(function(){
+    $(".fotter_inn .dropdown, .sitemap_submenu .dropdown").hover(            
+            function() {
+                $('.fotter_inn .dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.fotter_inn .dropdown-menu, .sitemap_submenu .dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+    	
+	</script>
+	
+
+
+</body>
+
+<!-- Mirrored from www.chandokonline.in/Gallery/PhotoGallery by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Mar 2022 03:42:27 GMT -->
+</html>
+
+
