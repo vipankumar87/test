@@ -1,5 +1,24 @@
 <?php
-  use App\Http\Controllers\LanguageController;
+
+use App\Http\Livewire\Gallery;
+use Illuminate\Support\Facades\Route;
+
+use App\Http\Livewire\Auth\ForgotPassword;
+use App\Http\Livewire\Auth\ResetPassword;
+use App\Http\Livewire\Auth\SignUp;
+use App\Http\Livewire\Auth\Login;
+use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Billing;
+use App\Http\Livewire\Profile;
+use App\Http\Livewire\Tables;
+use App\Http\Livewire\StaticSignIn;
+use App\Http\Livewire\StaticSignUp;
+use App\Http\Livewire\Rtl;
+
+use App\Http\Livewire\LaravelExamples\UserProfile;
+use App\Http\Livewire\LaravelExamples\UserManagement;
+
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,25 +31,25 @@
 |
 */
 
+Route::get('/', Login::class)->name('login');
 
-// Route url
-Route::get('/', 'DashboardController@dashboardAnalytics');
+// Route::get('/sign-up', SignUp::class)->name('sign-up');
+Route::get('/login', Login::class)->name('login');
 
-// Route Dashboards
-Route::get('/dashboard-analytics', 'DashboardController@dashboardAnalytics');
+Route::get('/login/forgot-password', ForgotPassword::class)->name('forgot-password');
 
-// Route Components
-Route::get('/sk-layout-2-columns', 'StaterkitController@columns_2');
-Route::get('/sk-layout-fixed-navbar', 'StaterkitController@fixed_navbar');
-Route::get('/sk-layout-floating-navbar', 'StaterkitController@floating_navbar');
-Route::get('/sk-layout-fixed', 'StaterkitController@fixed_layout');
+Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')->middleware('signed');
 
-// acess controller
-Route::get('/access-control', 'AccessController@index');
-Route::get('/access-control/{roles}', 'AccessController@roles');
-Route::get('/modern-admin', 'AccessController@home')->middleware('permissions:approve-post');
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/billing', Billing::class)->name('billing');
+    Route::get('/profile', Profile::class)->name('profile');
+    Route::get('/tables', Tables::class)->name('tables');
+    Route::get('/static-sign-in', StaticSignIn::class)->name('sign-in');
+    Route::get('/static-sign-up', StaticSignUp::class)->name('static-sign-up');
+    // Route::get('/rtl', Rtl::class)->name('rtl');
+    Route::get('/user-profile', UserProfile::class)->name('user-profile');
+    Route::get('/user-management', UserManagement::class)->name('user-management');
+    Route::get('/gallery-management', Gallery::class)->name('gallery-management');
+});
 
-// Auth::routes();
-
-// locale Route
-Route::get('lang/{locale}',[LanguageController::class,'swap']);
